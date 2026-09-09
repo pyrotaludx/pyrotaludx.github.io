@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>花都石头记矿物园-奇石矿物科普与旅游参观指南</title>
+    <meta name="description" content="花都石头记矿物园是集奇石收藏、矿物科普、休闲观光于一体的主题园区。了解园区特色展馆、主要看点、参观路线与实用游玩攻略，感受天然矿物与地质文化的魅力。" />
+    <meta name="keywords" content="花都石头记矿物园,广州石头记,矿物园攻略,奇石展览,矿物科普,花都旅游景点,石头记园区" />
+    <link rel="stylesheet" href="https://cdn.bdwgg.com/mh.css" type="text/css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+            background-color: #f7f9f8;
+            color: #2d3a35;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 页眉 */
+        .site-header {
+            background-color: #1f3b34;
+            padding: 16px 0;
+            border-bottom: 4px solid #b99b6b;
+        }
+        .header-inner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+        .brand-icon {
+            font-size: 2.2rem;
+            background: #b99b6b;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1f3b34;
+        }
+        .brand-text {
+            color: #f0eee7;
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+        .brand-text small {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 300;
+            color: #cfd8d2;
+            letter-spacing: 1px;
+        }
+        .header-contact {
+            color: #d8e0db;
+            font-size: 0.9rem;
+            text-align: right;
+        }
+        .header-contact span {
+            display: block;
+        }
+
+        /* 导航 */
+        .main-nav {
+            background: #2c5148;
+        }
+        .nav-list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+        .nav-list a {
+            display: block;
+            padding: 14px 24px;
+            color: #eef3f0;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.2s;
+            border-right: 1px solid #2a4a41;
+        }
+        .nav-list a:hover {
+            background: #1f3b34;
+        }
+
+        /* 首屏横幅 */
+        .hero {
+            background: linear-gradient(135deg, #2c4a40 0%, #1f3b34 100%);
+            color: #f5f2ea;
+            padding: 60px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: "";
+            position: absolute;
+            right: -80px;
+            top: -80px;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(185,155,107,0.3) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .hero-content {
+            max-width: 720px;
+        }
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            margin-bottom: 14px;
+            letter-spacing: 1px;
+        }
+        .hero p {
+            font-size: 1.15rem;
+            opacity: 0.92;
+            margin-bottom: 30px;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: #b99b6b;
+            color: #1f3b34;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+        .hero-stats {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .stat-item {
+            border-left: 3px solid #b99b6b;
+            padding-left: 14px;
+        }
+        .stat-item strong {
+            display: block;
+            font-size: 1.8rem;
+            color: #f0e3cf;
+        }
+        .stat-item span {
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+
+        /* 信息栏 */
+        .info-bar {
+            background: #fff;
+            border-bottom: 1px solid #e4e8e5;
+            padding: 25px 0;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .info-card {
+            background: #fafbf9;
+            border-radius: 10px;
+            padding: 18px 20px;
+            border-left: 5px solid #b99b6b;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+        .info-card h3 {
+            font-size: 1.1rem;
+            color: #1f3b34;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .info-card p {
+            color: #4a5c55;
+            font-size: 0.95rem;
+        }
+
+        /* 园区介绍 */
+        .section {
+            padding: 50px 0;
+        }
+        .section-title {
+            font-size: 1.9rem;
+            color: #1f3b34;
+            margin-bottom: 12px;
+            position: relative;
+            padding-bottom: 14px;
+        }
+        .section-title::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px;
+            height: 3px;
+            background: #b99b6b;
+            border-radius: 3px;
+        }
+        .section-sub {
+            color: #5c6f66;
+            margin-bottom: 30px;
+            max-width: 800px;
+        }
+        .intro-flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: flex-start;
+        }
+        .intro-text {
+            flex: 2;
+            min-width: 300px;
+        }
+        .intro-text p {
+            margin-bottom: 16px;
+            font-size: 1.02rem;
+        }
+        .intro-aside {
+            flex: 1;
+            min-width: 250px;
+            background: #eef3ef;
+            border-radius: 12px;
+            padding: 22px;
+            border: 1px solid #d5e0da;
+        }
+        .intro-aside h3 {
+            color: #1f3b34;
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+        }
+        .intro-aside ul {
+            list-style: none;
+        }
+        .intro-aside li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #c4d1c9;
+            font-size: 0.95rem;
+        }
+        .intro-aside li:last-child {
+            border-bottom: none;
+        }
+
+        /* 特色展馆卡片 */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 24px;
+            margin-top: 20px;
+        }
+        .gallery-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid #e7ece9;
+        }
+        .gallery-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 22px rgba(0,0,0,0.1);
+        }
+        .gallery-img {
+            height: 180px;
+            background: linear-gradient(145deg, #b8cfc3, #7f9d91);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.5rem;
+            color: #f0ece2;
+        }
+        .gallery-body {
+            padding: 18px 18px 22px;
+        }
+        .gallery-body h3 {
+            color: #1f3b34;
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+        }
+        .gallery-body p {
+            font-size: 0.92rem;
+            color: #4d5f57;
+            margin-bottom: 12px;
+        }
+        .tag {
+            display: inline-block;
+            background: #e9f0ec;
+            color: #1f3b34;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.78rem;
+            font-weight: 500;
+            margin-right: 6px;
+            margin-bottom: 4px;
+        }
+
+        /* 参观攻略 */
+        .guide-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+        .guide-item {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 22px;
+            border: 1px solid #e2e8e4;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+        }
+        .guide-item .step-num {
+            display: inline-block;
+            background: #1f3b34;
+            color: #f0e3cf;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 34px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        .guide-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #1f3b34;
+        }
+        .guide-item p {
+            font-size: 0.93rem;
+            color: #4a5c55;
+        }
+
+        /* 常见问题 */
+        .faq-list {
+            max-width: 900px;
+        }
+        .faq-item {
+            background: #fff;
+            border: 1px solid #e2e8e4;
+            border-radius: 10px;
+            margin-bottom: 14px;
+            overflow: hidden;
+        }
+        .faq-q {
+            padding: 16px 22px;
+            background: #f3f6f4;
+            font-weight: 600;
+            color: #1f3b34;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: default;
+        }
+        .faq-q::after {
+            content: "+";
+            font-size: 1.4rem;
+            color: #b99b6b;
+            font-weight: 400;
+        }
+        .faq-a {
+            padding: 6px 22px 18px;
+            font-size: 0.95rem;
+            color: #3d5148;
+            border-top: 1px dashed #dce5df;
+        }
+
+        /* 温馨提示 */
+        .notice-box {
+            background: #e9f0ec;
+            border-radius: 14px;
+            padding: 24px 28px;
+            margin: 30px 0;
+            border-left: 6px solid #b99b6b;
+        }
+        .notice-box h3 {
+            color: #1f3b34;
+            margin-bottom: 10px;
+        }
+        .notice-box ul {
+            padding-left: 20px;
+        }
+        .notice-box li {
+            margin-bottom: 6px;
+        }
+
+        /* 页脚 */
+        .site-footer {
+            background: #1f3b34;
+            color: #b9c9c1;
+            padding: 40px 0 25px;
+            margin-top: 30px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 25px;
+        }
+        .footer-col h4 {
+            color: #e7ede9;
+            margin-bottom: 14px;
+            font-size: 1.1rem;
+            border-bottom: 1px solid #3a5a50;
+            padding-bottom: 8px;
+        }
+        .footer-col ul {
+            list-style: none;
+        }
+        .footer-col li {
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+        }
+        .footer-copy {
+            border-top: 1px solid #34564b;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #8ba297;
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.9rem;
+            }
+            .brand-text {
+                font-size: 1.2rem;
+            }
+            .nav-list a {
+                padding: 12px 16px;
+                border-right: none;
+                border-bottom: 1px solid #2a4a41;
+                flex: 1 1 50%;
+                text-align: center;
+            }
+            .section {
+                padding: 35px 0;
+            }
+            .section-title {
+                font-size: 1.6rem;
+            }
+            .hero-stats {
+                gap: 16px;
+            }
+        }
+        @media (max-width: 480px) {
+            .header-contact {
+                display: none;
+            }
+            .nav-list a {
+                flex-basis: 100%;
+            }
+            .hero {
+                padding: 40px 0;
+            }
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="#" class="brand">
+            <span class="brand-icon">◆</span>
+            <span class="brand-text">花都石头记矿物园<small>Stone Story Mineral Garden</small></span>
+        </a>
+        <div class="header-contact">
+            <span>📍 广州市花都区珠宝小镇</span>
+            <span>🕙 09:00 - 18:00（全年开放）</span>
+        </div>
+    </div>
+</header>
+
+<nav class="main-nav">
+    <div class="container">
+        <ul class="nav-list">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">园区导览</a></li>
+            <li><a href="#">主题展馆</a></li>
+            <li><a href="#">奇石藏品</a></li>
+            <li><a href="#">科普研学</a></li>
+            <li><a href="#">游玩攻略</a></li>
+            <li><a href="#">交通指南</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-badge">⛰ 国家AAA级旅游景区</div>
+            <h1>花都石头记矿物园</h1>
+            <p>一座以奇石、矿物、宝石为主题的沉浸式探索乐园。漫步地下宝藏与地上石林，感受亿万年的地质记忆。</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <strong>10000+</strong>
+                    <span>馆藏矿物标本</span>
+                </div>
+                <div class="stat-item">
+                    <strong>20+</strong>
+                    <span>特色主题展区</span>
+                </div>
+                <div class="stat-item">
+                    <strong>1.5h</strong>
+                    <span>建议游览时长</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="info-bar">
+    <div class="container info-grid">
+        <div class="info-card">
+            <h3>🎫 开放时间</h3>
+            <p>每日 09:00 - 18:00（17:00 停止入园）<br>周末及节假日正常开放</p>
+        </div>
+        <div class="info-card">
+            <h3>🚗 交通建议</h3>
+            <p>地铁9号线花都广场站换乘公交<br>自驾导航“石头记矿物园”直达</p>
+        </div>
+        <div class="info-card">
+            <h3>🎧 讲解服务</h3>
+            <p>每日定时免费讲解<br>团队可预约专业导览</p>
+        </div>
+        <div class="info-card">
+            <h3>🎁 特色体验</h3>
+            <p>寻宝活动 / 矿物课堂<br>文创商店 / 宝石DIY</p>
+        </div>
+    </div>
+</div>
+
+<main>
+    <!-- 园区介绍 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">走进矿物园 · 发现地球之美</h2>
+            <p class="section-sub">花都石头记矿物园位于广州市花都区珠宝小镇，是一座融合自然科普、艺术观赏与休闲娱乐的特色园区。这里不仅收藏了大量天然矿物晶体、奇石雅石，还通过创意展陈向公众展现地质科学的奇妙。</p>
+            <div class="intro-flex">
+                <div class="intro-text">
+                    <p>园区以“石头记”为主题灵感，将四大名著之一的《红楼梦》中“通灵宝玉”的文化意象与真实矿物标本结合，打造出兼具人文气息与自然奇观的游览空间。地上园区设有石雕小品、景观水系和主题花园；地下展馆则如同一个矿物宝库，陈列着来自世界各地的精美矿晶、化石与宝石原石。</p>
+                    <p>花都石头记矿物园不仅是亲子家庭周末出游的好去处，也是地学爱好者、摄影爱好者和研学团队的重要目的地。园内大量标本配有详细说明牌，部分展区设有互动装置，让参观者通过触摸、观察和体验，轻松学习矿物知识。</p>
+                </div>
+                <aside class="intro-aside">
+                    <h3>为什么值得参观？</h3>
+                    <ul>
+                        <li>🔹 华南地区少见的矿物主题园区</li>
+                        <li>🔹 适合亲子科普教育，寓教于乐</li>
+                        <li>🔹 室内外结合，不受天气影响</li>
+                        <li>🔹 园区设计精致，拍照出片率高</li>
+                        <li>🔹 周边配套珠宝小镇，可联动游玩</li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特色展馆 -->
+    <section class="section" style="background: #f0f4f1;">
+        <div class="container">
+            <h2 class="section-title">主题展馆与看点</h2>
+            <p class="section-sub">园区内分布着多个风格各异的展区，从宏观的矿石脉络到微观的晶体结构，每一处都值得驻足。</p>
+            <div class="gallery-grid">
+                <div class="gallery-card">
+                    <div class="gallery-img">💎</div>
+                    <div class="gallery-body">
+                        <h3>地下宝藏展馆</h3>
+                        <p>核心展馆，展出大型矿物晶簇、萤石、方解石、辉锑矿等精美标本，配合灯光效果呈现梦幻视觉。</p>
+                        <span class="tag">必看展区</span>
+                        <span class="tag">矿晶收藏</span>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img">🦕</div>
+                    <div class="gallery-body">
+                        <h3>古生物化石区</h3>
+                        <p>展示珊瑚化石、菊石、鱼类及植物化石，了解生命演化历程，感受时间的力量。</p>
+                        <span class="tag">化石</span>
+                        <span class="tag">科普</span>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img">🪨</div>
+                    <div class="gallery-body">
+                        <h3>奇石雅石园</h3>
+                        <p>灵璧石、太湖石、英石等传统观赏石错落陈列，搭配园林造景，体现东方赏石文化。</p>
+                        <span class="tag">园林</span>
+                        <span class="tag">传统文化</span>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img">💠</div>
+                    <div class="gallery-body">
+                        <h3>宝石与玉石厅</h3>
+                        <p>汇集各类宝石原石、玉石切件及雕刻工艺品，展示矿物之美与工艺技艺的结合。</p>
+                        <span class="tag">宝石</span>
+                        <span class="tag">工艺</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 参观攻略 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">实用参观攻略</h2>
+            <p class="section-sub">结合多数游客的游览经验，为你整理了一份高效参观路线与注意事项。</p>
+            <div class="guide-grid">
+                <div class="guide-item">
+                    <span class="step-num">1</span>
+                    <h3>推荐路线</h3>
+                    <p>入口 → 地上石雕园 → 地下宝藏展馆 → 化石区 → 奇石园 → 宝石厅 → 文创店。全程约1.5-2小时。</p>
+                </div>
+                <div class="guide-item">
+                    <span class="step-num">2</span>
+                    <h3>最佳时段</h3>
+                    <p>工作日上午游客较少，光线充足适合拍照。周末下午常有科普活动，可提前致电咨询。</p>
+                </div>
+                <div class="guide-item">
+                    <span class="step-num">3</span>
+                    <h3>亲子贴士</h3>
+                    <p>展馆内部分标本可触摸（有标识），请引导孩子文明参观。园区有休息区和小卖部，方便补给。</p>
+                </div>
+                <div class="guide-item">
+                    <span class="step-num">4</span>
+                    <h3>摄影建议</h3>
+                    <p>地下展馆灯光偏暗，建议使用大光圈镜头或手机夜景模式。请勿使用闪光灯，以免影响其他游客。</p>
+                </div>
+            </div>
+
+            <div class="notice-box">
+                <h3>📌 温馨提示</h3>
+                <ul>
+                    <li>园区实行一人一票，儿童及老人优惠票请携带相关证件。</li>
+                    <li>部分展区地面湿滑，请穿着舒适防滑的鞋子。</li>
+                    <li>展馆内请勿饮食，请勿触碰没有开放触摸标识的展品。</li>
+                    <li>如需团体讲解或研学课程，建议提前3天电话预约。</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" style="background: #f0f4f1;">
+        <div class="container">
+            <h2 class="section-title">常见问题解答</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-q">花都石头记矿物园的具体位置在哪里？</div>
+                    <div class="faq-a">园区位于广州市花都区珠宝小镇（平步大道附近）。自驾可导航“石头记矿物园”，园区设有停车场。公交可乘坐花都区内多条线路至“珠宝小镇”站下车。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">门票价格是多少？有优惠政策吗？</div>
+                    <div class="faq-a">门票价格根据淡旺季及活动有所调整，一般成人票在50-70元区间。儿童、学生、老人及军人等可凭有效证件享受优惠。建议出发前通过官方渠道或旅游平台查询当日票价。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">游览需要多长时间？适合带小朋友吗？</div>
+                    <div class="faq-a">常规游览约需1.5至2小时。园区科普性和趣味性较强，大部分展区无障碍设施完善，非常适合亲子家庭。馆内设有互动体验环节，小朋友通常会很感兴趣。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">园区内可以拍照吗？是否允许携带宠物？</div>
+                    <div class="faq-a">园区内允许个人拍照和录像，但请勿使用三脚架或闪光灯。出于安全及卫生考虑，园区暂不允许携带宠物入内（导盲犬除外）。</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>花都石头记矿物园</h4>
+                <ul>
+                    <li>📍 广州市花都区珠宝小镇</li>
+                    <li>📞 咨询电话：020-3688xxxx</li>
+                    <li>📧 邮箱：info@stonegarden.cn</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>快速导航</h4>
+                <ul>
+                    <li><a href="#" style="color: inherit;">园区开放时间</a></li>
+                    <li><a href="#" style="color: inherit;">票务预订</a></li>
+                    <li><a href="#" style="color: inherit;">交通路线</a></li>
+                    <li><a href="#" style="color: inherit;">团体预约</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>友情提醒</h4>
+                <ul>
+                    <li>请文明参观，爱护展品</li>
+                    <li>园区禁烟，感谢配合</li>
+                    <li>建议提前关注天气变化</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copy">
+            © 2024 花都石头记矿物园 信息参考页 | 本页面为科普与旅游信息介绍
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+  </html>
